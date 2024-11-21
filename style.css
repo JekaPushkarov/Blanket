@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button, input, textarea {
+  outline: none;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+/* base css */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #FFF3DD;
+  width: 100%;
+  font-style: normal;
+} 
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-sb-col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.section {
+  padding: 5.9rem 3.5rem;
+}
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+}
+/* шапка*/
+.header {
+padding: 4.8rem 16.2rem 4.8rem 16.3rem;
+background-color: #FFF;
+width: 100%;
+align-items: center;
+gap: 1rem;
+}
+/* заглавный текст ОДЕЯЛА ЗИМНИЕ*/
+.title1 {
+color: #000;
+font-size: 9.6rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center
+}
+  /* текст внутри контейнера title2*/
+  .thb1 {
+    color: white; 
+    font-size: 4.8rem; 
+    font-weight: 600;
+  }
+
+  .title-bg {
+    background: url('img/title-bg.svg');
+    height: 6.1rem;
+    width: 61.5rem;
+    text-align: center;
+  }
+
+  /* 2 секци -------------------------------*/
+ .block2 {
+  background: #FFD21D;
+  }
+
+  .deal-info {
+    gap: 2rem;
+  }
+  .white-bg {
+    background: url('img/backgraund_1.svg');
+    width: 59.7rem;
+height: 7.2rem;
+text-align: center;
+  }
+
+  .deal-number {
+    font-size: 28rem;
+    color: white;
+    font-weight: 800;
+  }
+
+  .procent {
+    font-size: 18rem;
+font-weight: 600;
+color: white;
+line-height: 1;
+  }
+
+  .minus {
+    color: white;
+    font-size: 5.2rem;
+font-weight: 600;
+line-height: 1;
+
+  }
+
+  .deal-number-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pink-bg {
+    display: flex;
+    background: url('img/backgraund_2.svg') no-repeat center/contain;
+    width: 58.5rem;
+height: 33rem;
+padding: 0 4rem 0 2.8rem;
+
+justify-content: center;
+  }
+
+  .deal-title {
+    font-size: 5.2rem;
+    padding: 0.8rem;
+
+font-weight: 600;
+line-height: normal;
+  }
+  
+ /* кнопка */ 
+   .bannerbtn {
+    padding: 1.7rem 2.7rem;
+    font-family: "Montserrat Alternates";
+    border: none;
+    margin: 2.5rem auto 0;
+    color: #FF7981;
+    white-space: nowrap;
+    width: 26rem;
+font-size: 2rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+    background-color: white;
+    transition: background-color 800ms ease-out, color 800ms ease-out;
+   }
+   /* при наведении */
+   .bannerbtn:hover {
+    background-color: #FF7981;
+    color: white;
+   }
+
+   .girlimg {
+    width: 56.6rem;
+height: 56rem;
+
+   }
+
+/* 3 секция карточки товаров*/
+.b3price {
+  background-color: #FFE7E8;
+  gap: 6.4rem;
+}
+
+.product-cards {
+  max-width: 105rem;
+  margin: 0 auto;
+  gap: 4.5rem;
+}
+/* титулка бєкграунд*/
+.title-bg2 {
+background: url('img/title bacgraund.svg');
+height: 5.9rem;
+  width: 62.4rem;
+  margin: 0 auto;
+  position: relative;
+}
+.thb2 {
+color:  #FFF;
+font-size: 4.8rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding-left: 1rem;
+}
+/* карточка товара*/
+.cardsb {
+    width: 32rem;
+    padding: 7.4rem 1.5rem 2.2rem;
+    background: white; /* Белый фон */
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.10);
+    position: relative;
+  }
+  /* фон скидка */
+  .sale-card {
+    background: url('img/sale-background.png');
+    width: 8rem;
+    color: white;
+    font-size: 2rem;
+font-style: normal;
+font-weight: 600;
+letter-spacing: 0.2rem;
+height: 3.2rem;
+position: absolute;
+left: 0;
+top: 1.1rem;
+padding: 0.4rem 1rem;
+  }
+  /* текст скидка */
+  .sale-card-text {
+    z-index: 1;
+  }
+  
+
+  /* Картинка карточки */
+
+  .product-image {
+    width: 25rem;
+    height: 17.7rem;
+    margin: 0 auto 4.2rem;
+    transition: transform 800ms ease;
+  }
+  .product-image:hover {
+    transform: scale(1.1)
+  }
+  
+ 
+  /* титулка карточка товара */
+  .product-title {
+    background: url('img/backgraund _title.svg');
+    width: 29.35rem;
+    height: 3.3rem;
+    
+  }
+  /* титулка карточка текст */
+  .title-text-card {
+    color: #000;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 0.8rem 0.6rem 0rem 0.5rem;
+
+  }
+  .price-cards {
+    background: url('img/fire_price.png') no-repeat 15%;
+    width: 100%;
+    gap: 1rem;
+    height: 10.2rem;
+    padding: 2.2rem 0;
+
+  }
+  /* скидка карточка фон */
+  .discount-price-background {
+    background: url('img/backgraund_discount.svg') ;
+    width: 14.2rem;
+    height: 3.9rem;
+    right: 11.1rem;
+    
+  }
+  /* скидка карточка текст */
+  .discount-price {
+    color: #000;
+font-size: 2rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-decoration: line-through;
+margin-left: 9.8rem;
+
+  }
+  /* цена карточка фон */
+  .original-price-background {
+    background: url('img/backgraund_price.svg');
+    width: 14.8rem;
+height: 4.2rem;
+position: relative;
+
+  }
+  /* цена карточка фон */
+  .original-price {
+    color: #000;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 9.6rem;
+  }
+  .fire {
+    width: 6.5634rem;
+height: 10.1854rem;
+position: absolute;
+top: 6.2rem;
+  }
+/* кнопка карточка товара */
+  .class_button_cards {
+    width: 29.3rem;
+padding: 1.7rem 2.7rem;
+justify-content: center;
+align-items: center;
+color: #FF7981;
+font-family: "Montserrat Alternates";
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+border: 2px solid #FF7981;
+background: #FFF;
+transition: background-color 800ms ease-out, color 800ms ease-out;
+  }
+
+  .class_button_cards:hover {
+    background-color:#FF7981;
+    color: #FFF;
+  }
+
+  .product-info {
+    gap: 3.8rem;
+  }
+
+ /* чому ми секция */
+ .section-why-us .title-bg2[class] {
+  width: 45.6rem;
+  text-align: center;
+ }  
+ .section-why-us {
+   background-color: #FFD21D;
+ }
+ /**/
+ .why-we-background-text {
+  background: url('img/why-we-backround-text.svg');
+  width: 58.1rem;
+  height: 54.2rem;
+  margin-top: 5.9rem;
+  padding: 2.2rem 5.6rem;
+ }
+ .title-text-wy {
+color: #000;
+font-size: 2rem;
+font-style: normal;
+font-weight: 600;
+display: flex;
+  align-items: center;
+  line-height: 1;
+ }
+ .title-text-wy::before {
+  content: "•";           
+  color: #FF7981;         
+  font-size: 4.5rem;     
+  margin-right: 1rem;
+  padding-bottom: 0.5rem;
+ }
+ .text-wy {
+  font-size: 1.6rem;
+font-style: normal;
+font-weight: 600;
+line-height: 2.4rem;
+margin-left: 2.75rem;
+ }
+
+.why-us-video {
+  width: 56.3rem;
+  height: 54.8rem;
+}
+/* картинка на  блоке почему мы */
+.img-why-us {
+  position: absolute;
+  
+  width: 56.35rem;
+height: 54.8rem;
+}
+
+
+.why-us-container {
+  align-items: flex-end;
+}
+
+@media (max-width: 980px) {
+  html {
+    font-size: 1.35vw;
+  }
+  .container {
+    width: 100%;
+  }
+  .block2, .why-us-container {
+    flex-direction: column-reverse;
+    gap: 4rem;
+    align-items: center;
+  }
+  .price-cards {
+    background-size: contain;
+  }
+  
+}
+
+@media (max-width: 1900px) {
+  html {
+    font-size: .5145svw;
+  }
+}
